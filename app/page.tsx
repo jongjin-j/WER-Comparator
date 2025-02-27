@@ -1,5 +1,7 @@
 'use client';
 
+import AudioRecorder from "./components/AudioRecorder";
+
 export default function Home() {
   const testConnection = async () => {
     try {
@@ -15,6 +17,7 @@ export default function Home() {
     <div>
       <h1>Hello World</h1>
       <button onClick={testConnection}>Test Backend Connection</button>
+      <AudioRecorder />
     </div>
   );
 }
